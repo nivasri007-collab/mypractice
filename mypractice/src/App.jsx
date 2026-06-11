@@ -9,10 +9,15 @@ function App() {
 
   return (
     <>
-    <HomePage />
+<Routes>
+  <Route path='/home' element={<HomePage/>} />
+  <Route path='about' element={<AboutPage/>}/>
+  <Route path='/contact' element={<ContactPage/>}/>
+</Routes>
+{/*     <HomePage />
     <AboutPage />
     <ContactPage />
-    </>
+ */}    </>
   )
 }
 
